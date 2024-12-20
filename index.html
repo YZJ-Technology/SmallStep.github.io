@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SmallStep</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* Header styles */
+        header {
+			top: 0;
+			left: 0;
+			width: 100%;
+        }
+		
+		.top-navigation {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;  /* 垂直居中对齐 */
+			width: 100%;
+			height: 60px;
+		}
+		
+		.top-navigation-left {
+			display: flex;
+			justify-content: flex-start; /* 子元素从容器的右边开始排列 */
+			align-items: center;  /* 垂直居中对齐 */
+			
+			margin-left: 40px;
+		}
+		
+		.top-navigation-right {
+			display: flex;
+			flex-direction: row-reverse; /* 子元素从右到左排列 */
+			align-items: center;  /* 垂直居中对齐 */
+			
+			margin-right: 40px;
+		}
+		
+		.navigation-logo{
+			align-items: center;  /* 垂直居中对齐 */
+		}
+		
+		.navigation-logo img{
+			width: 46px;  /* 设置图片宽度 */
+			height: 46px;  /* 设置图片高度 */
+		}
+		
+		.navigation-small-setp {
+			margin-left: 40px;
+			font-size: 20px;
+			color: #000000;
+		}
+		
+		.navigation-home {
+			margin-right: 40px;
+			
+			font-size: 18px;
+			color: #000000;
+		}
+		
+		.navigation-privacy-policy {
+			font-size: 18px;
+			color: #333333;
+		}
+		
+		.content {
+		   display: flex; /* 设置为 Flexbox */
+		   flex-direction: column;
+			
+		   /* max-height: 100vh; */
+		   overflow-y: auto; /* Allow vertical scrolling */
+		}
+		
+		.home {
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/home.png');
+			background-size: cover;        /* 背景图片覆盖整个容器 */
+			background-position: center;
+			
+			display: flex;  /* 使用 flexbox 布局 */
+			justify-content: center;  /* 水平居中 */
+			align-items: center;  /* 垂直居中 */
+		}
+		.video-download {
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/Video.png');
+			background-size: cover;        /* 背景图片覆盖整个容器 */
+			background-position: center;
+		}
+		.gps-camera {
+			display: flex;
+			flex-direction: row-reverse; /* 子元素从右到左排列 */
+			
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/GPS.png');
+			background-size: cover;        /* 背景图片覆盖整个容器 */
+			background-position: center;
+		}
+		
+		.video-camera-cotnet {
+			display: flex; /* 设置为 Flexbox */
+			flex-direction: column;
+			
+			margin-left: 100px;
+			margin-top: 200px;
+			width: 400px;
+		}
+		
+		.gps-camera-cotnet {
+			display: flex; /* 设置为 Flexbox */
+			flex-direction: column;
+			
+			margin-right: 150px;
+			margin-top: 100px;
+		
+			width: 400px;
+		}
+		
+		.app-logo img {
+			width: 108px;  /* 设置图片宽度 */
+			height: 108px;  /* 设置图片高度 */
+		}
+		
+		.app-title {
+			font-size: 24px;
+			font-weight: bold;
+			color: #000000;
+			
+			margin-top: 20px;
+		}
+		
+		.app-introduce {
+			font-size: 18px;
+			font-weight: bold;
+			color: #000000;
+			
+			margin-top: 20px;
+		}
+		
+		.google_paly {
+			margin-top: 20px;
+		}
+		
+		.google_paly img {
+			width: 170px;  /* 设置图片宽度 */
+			height: 49px;  /* 设置图片高度 */
+		}
+		
+		.home-introduce {
+			text-align: center;  /* 文字居中 */
+		}
+		
+		.home-introduce-title {
+			font-size: 50px;
+			font-weight: bold;
+			color: #000000;
+		}
+		
+		.home-introduce-tips {
+			font-size: 20px;
+			font-weight: bold;
+			color: #000000;
+			
+			margin-top: 50px;
+		}
+		
+		.content-support {
+			display: flex;  /* 使用 flexbox 布局 */
+			justify-content: center;  /* 水平居中 */
+			align-items: center;  /* 垂直居中 */
+			
+			width: 100%;
+			height: 180px;
+		}
+		
+		.support-all {
+			text-align: center;  /* 文字居中 */
+		}
+		
+		.support-title{
+			font-size: 25px;
+			font-weight: bold;
+			color: #741d45;
+		}
+		
+		.support-content {
+			margin-top: 20px;
+			
+			font-size: 20px;
+			font-weight: bold;
+			color: #000000;
+		}
+		
+		.support-submit {
+			margin-top: 20px;
+			
+			display: flex;  /* 使用 flexbox 布局 */
+			justify-content: center;  /* 水平居中 */
+			align-items: center;  /* 垂直居中 */
+		}
+		
+		.submit_btn {
+			width: 140px;
+			height: 50px;
+			
+			background-color: #b23771;
+			color: #ffffff;
+			
+			border: none;      /* 移除边框 */
+			outline: none;     /* 移除点击时的轮廓 */
+			/* 去除背景 */
+			/* background: none;  */
+			padding: 0;    
+			
+			border-radius: 5px;     /* 设置圆角 */
+		}
+		
+		.content-end {
+			width: 100%;
+			height: 100px;
+		}
+		
+		footer {
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+		}
+		
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+		<div class="top-navigation">
+			<div class="top-navigation-left">
+				<div class="navigation-logo"><img src="img/web_logo.jpg" alt="Image"></div>
+				<div class="navigation-small-setp"><p>SmallStep</p></div>
+			</div>
+			<div class="top-navigation-right">
+				<div class="navigation-privacy-policy"><a href="html/PrivacyPolicy.html">Privacy Policy</a></div>
+				<div class="navigation-home"><a>Home</a></div>
+			</div>
+		</div>
+    </header>
+	
+	<div class="content">
+		<div class="home">
+			<div class="home-introduce">
+				<div class="home-introduce-title">
+					SmallStep. Inc
+				</div>
+				<div class="home-introduce-tips">
+					We make apps that make your life easier.
+				</div>
+			</div>
+		</div>
+		<div class="video-download">
+			<div class="video-camera-cotnet">
+				<div class="app-logo">
+					<img src="img/video_logo.png" alt="Image">
+				</div>
+				<div class="app-title">
+					All Video Downloader
+				</div>
+				<div class="app-introduce">
+					The fastest all Video Downloader for Android! Download videos and photos from online video websites, social media with all video downloader. All video downloader is a online video downloading tool to help you download videos, reels and save stories in 1080P HD quality.
+				</div>
+				<div class="google_paly">
+					<a href="https://play.google.com/store/apps/details?id=videodownloader.video.downloader.videosaver" target="_blank">
+					    <img src="img/google_play.png" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="gps-camera">
+			<div class="gps-camera-cotnet">
+				<div class="app-logo">
+					<img src="img/gps_logo.png" alt="Image">
+				</div>
+				<div class="app-title">
+					GPS Camera with timestamp map
+				</div>
+				<div class="app-introduce">
+					Our GPS Camera app is a powerful timestamp Camera tool. With GPS camera, you can easily add geotag, live map location, datetime, altitude, longitude & latitude, weather information to your GPS camera photos.
+				</div>
+				<div class="google_paly">
+					<a href="https://play.google.com/store/apps/details?id=gpsmapcamera.timestampcamera.geotagphoto.gpscamera" target="_blank">
+					    <img src="img/google_play.png" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="content-support">
+			<div class="support-all">
+				<div class="support-title">
+					Questions?
+				</div>
+				<div class="support-content">
+					Contact usersupport@smallstep.fun to get more information on the project
+				</div>
+				<div class="support-submit">
+					<!-- 使用mailto协议链接到默认的邮件客户端 -->
+					<a href="mailto:usersupport@smallstep.fun?subject=support">
+						<button class="submit_btn">CONTACT</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="content-end"></div>
+	</div>	
+	
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2024 SmallStep. All rights reserved.</p>
+	</footer>
+</body>
+</html>
