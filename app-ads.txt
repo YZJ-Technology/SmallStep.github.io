@@ -914,6 +914,12 @@ yieldmo.com, 3591550211052216798, RESELLER, 6a92c77cfc3d2258
 lijit.com, 500520, RESELLER, fafdf38b16bf6b2b
 pubmatic.com, 157559, RESELLER, 5d62403b186f2ace
 aralego.com, par-9A2627866DA4BBE4F4AA4A67A3DDE686, RESELLER
+sonobi.com, 45dd948092, reseller, d1a215d9eb5aee9e
+theaudiencestreet.com, tas-703, reseller
+carbonatix.com, 141073554, reseller
+adingenious.com, 75036, reseller
+iion.io, 10171, reseller, 013a29748465dc57
+growzee.io, cd9d1950-1f84-4645-80f4-bdbaa23548a0, reseller
 #Inmobi
 #Pangle
 pangleglobal.com, 5025505, DIRECT
