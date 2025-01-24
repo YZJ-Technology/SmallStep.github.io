@@ -1,6 +1,9 @@
 #Admob
 google.com, pub-5234674988768908, DIRECT, f08c47fec0942fa0
 #Admob
+#Facebook
+facebook.com, 938444704846373, DIRECT, c3e20eee3f780d68
+#Facebook
 #Minternal
 mintegral.com, 50844, DIRECT, 0aeed750c80d6423
 pokkt.com, 7139, RESELLER, c45702d9311e25fd
