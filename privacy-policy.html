@@ -129,6 +129,9 @@
 				font-size: 16px;
 				color: #000000;
 			}
+			.content-blue {
+				color: blue;
+			}
 			.content-end {
 				display: flex; /* 设置为 Flexbox */
 				lign-items: flex-start; /* 垂直方向从顶部对齐 */
@@ -139,6 +142,14 @@
 				margin-top: 100px;
 				
 				height: 50px;
+			}
+			
+			.blue-dot-text::before {
+				content: "•";  /* Unicode 圆点 */
+				color: blue;
+				font-size: 20px;
+				margin-right: 5px;
+				vertical-align: middle; /* 让圆点垂直居中 */
 			}
 			
 		</style>
@@ -164,7 +175,7 @@
 				</div>
 				<div class="content-line"></div>
 				<div class="content-default" style="margin-top: 30px;margin-bottom: 30px;">
-					<p>Last Updated: 2024.3.26</p>
+					<p class="three-title">Last Updated: 2025.3.13</p>
 					<p style="margin-top: 15px;">At SmallStep, we deeply value your privacy and are committed to handling your personal information responsibly and in compliance with applicable data protection laws. Our privacy practices are founded on the principles of necessity, transparency, security, and user control.</p>
 				</div>
 				<div class="two-title">
@@ -175,7 +186,6 @@
 					<p style="margin-top: 15px;">▪️ Store your personal information only for as long as necessary.</p>
 					<p style="margin-top: 15px;">▪️ Be cautious and intentional about the personal information we collect.</p>
 					<p style="margin-top: 15px;">▪️ Allow you easy control over your public and private information.</p>
-					<p style="margin-top: 15px;">▪️ Be transparent about our data collection and usage practices.</p>
 					<p style="margin-top: 15px;">▪️ Be transparent about our data collection and usage practices.</p>
 				</div>
 				<div class="two-title">
@@ -201,24 +211,57 @@
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
 					<p>This document covers:</p>
-					<p style="margin-top: 15px;">1. Data collection and usage</p>
-					<p style="margin-top: 15px;">2. Legal basis for data usage</p>
-					<p style="margin-top: 15px;">3. Third-party sharing</p>
-					<p style="margin-top: 15px;">4. Data retention</p>
-					<p style="margin-top: 15px;">5. Your rights</p>
-					<p style="margin-top: 15px;">6. Child users</p>
-					<p style="margin-top: 15px;">7. International data transfers</p>
-					<p style="margin-top: 15px;">8. Security measures</p>
-					<p style="margin-top: 15px;">9. Policy updates</p>
-					<p style="margin-top: 15px;">10. Contact and complaints</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">1. </span>Data collection and usage
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">2. </span>Legal basis for data usage
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">3. </span>Third-party sharing
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">4. </span>Data retention
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">5. </span>Your rights
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">6. </span>Child users
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">7. </span>International data transfers
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">8. </span>Security measures
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">9. </span>Cookie policy
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">10. </span>In-app purchases
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">11. </span>User-generated content
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">12. </span>Policy updates
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">13. </span>Contact and complaints
+					</p>
 				</div>
 				<div class="two-title">
 					<p>Your Rights to Object</p>
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
 					<p>You have the right to:</p>
-					<p style="margin-top: 15px;">1. Object to our use of your data for direct marketing.</p>
-					<p style="margin-top: 15px;">2. Raise valid objections to our processing of your data based on legitimate interests.</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">1. </span>Object to our use of your data for direct marketing.
+					</p>
+					<p style="margin-top: 15px;">
+						<span class="content-blue">2. </span>Raise valid objections to our processing of your data based on legitimate interests.
+					</p>
 					<p style="margin-top: 15px;">For more details, see the "Your Rights" section.</p>
 				</div>
 				<div class="two-title">
@@ -233,65 +276,161 @@
 				<div class="three-title" style="margin-top: 15px;">
 					<p>Data Collection and Usage</p>
 				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Automatically Collected Data</p>
+				</div>
 				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
-					<p>When utilizing the Service, Usage Data is gathered automatically. This may involve details like the Internet Protocol address (IP address) of your device, the type of browser you use, its version, which pages of our Service you visit, your visiting time and date, the duration of your visit on those pages, unique device identifiers, and additional diagnostic information.</p>
-					<p style="margin-top: 15px;">Should you use a mobile device to access the Service, we automatically gather specific data. This includes but is not limited to the kind of mobile device you employ, its unique ID, the IP address of your mobile device, your mobile operating system, the mobile internet browser you utilize, unique device identifiers, and more diagnostic data.</p>
-					<p style="margin-top: 15px;">Furthermore, each time you visit our Service or access it using a mobile device, your browser may transmit certain information to us. The following is an indicative, but not exhaustive, list of Usage Data components:</p>
-					<p style="margin-top: 15px;">- Model of hardware;</p>
-					<p style="margin-top: 2px;">- Operating system details and version;</p>
-					<p style="margin-top: 2px;">- Screen dimensions and pixel density;</p>
-					<p style="margin-top: 2px;">- Language and country setting;</p>
-					<p style="margin-top: 2px;">- Unique device identifiers (such as IDFA);</p>
-					<p style="margin-top: 2px;">- Time zone setting;</p>
-					<p style="margin-top: 2px;">- Status of device sound settings (pertinent to reminder functionalities).</p>
+					<p style="margin-top: 15px;">When utilizing the Service, Usage Data is gathered automatically. This may involve details like:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Internet Protocol address (IP address) of your device</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Type of browser you use and its version</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Pages of our Service you visit</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Visiting time, date, and duration</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Unique device identifiers</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Diagnostic information</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Mobile Device Data</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p style="margin-top: 15px;">Should you use a mobile device to access the Service, we automatically gather specific data, including but not limited to:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Type of mobile device</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Device unique ID</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">IP address of your mobile device</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Mobile operating system</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Mobile internet browser</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Unique device identifiers (such as IDFA/AAID for advertising)</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Other diagnostic data</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Browser-Transmitted Data</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p style="margin-top: 15px;">Each time you visit our Service or access it using a mobile device, your browser may transmit certain information to us, including:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Model of hardware</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Operating system details and version</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">IP address of your mobile device</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Screen dimensions and pixel density</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Language and country setting</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Time zone setting</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Status of device sound settings (pertinent to reminder functionalities)</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Analytics Data</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
 					<p style="margin-top: 15px;">For enhanced user experience, we have incorporated tools for data analytics within the App. These tools do not gather health or private data of users. They are solely utilized for pinpointing CRASH issues and conducting AB tests for new features and designs. The information collected includes:</p>
-					<p style="margin-top: 15px;">- Details about the device, such as:</p>
-					<p style="margin-top: 2px;">- Screen Size</p>
-					<p style="margin-top: 2px;">- Manufacturer</p>
-					<p style="margin-top: 2px;">- Model</p>
-					<p style="margin-top: 15px;">- System information of the device:</p>
-					<p style="margin-top: 2px;">- OS Name</p>
-					<p style="margin-top: 2px;">- OS Version</p>
-					<p style="margin-top: 2px;">- OS Build</p>
-					<p style="margin-top: 2px;">- Time Zone</p>
-					<p style="margin-top: 2px;">- System Language</p>
-					<p style="margin-top: 2px;">- Carrier's country and name</p>
-					<p style="margin-top: 15px;">- Location details:</p>
-					<p style="margin-top: 2px;">- Locale</p>
-					<p style="margin-top: 2px;">- Country and regional area</p>
-					<p style="margin-top: 15px;">- Information regarding the application:</p>
-					<p style="margin-top: 2px;">- App Name</p>
-					<p style="margin-top: 2px;">- Build of the App</p>
-					<p style="margin-top: 2px;">- Version number of the App</p>
-					<p style="margin-top: 2px;">- SDK Name</p>
-					<p style="margin-top: 2px;">- SDK Version.</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Device Details:</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p class="blue-dot-text" style="margin-top: 15px;">Screen Size</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Manufacturer</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Model</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>System Information:</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p class="blue-dot-text" style="margin-top: 15px;">OS Name</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">OS Version</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">OS Build</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Time Zone</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">System Language</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Carrier's country and name</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Location Details:</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p class="blue-dot-text" style="margin-top: 15px;">Locale</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Country and regional area</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Application Information:</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p class="blue-dot-text" style="margin-top: 15px;">App Name</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Build of the App</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Version number of the App</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">SDK Name</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">SDK Version</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Permission Usage</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p style="margin-top: 15px;">Our app may request the following permissions based on functionality needs:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Media Library/Storage: </b>To save and retrieve files you create or modify within the app</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Camera: </b>To enable photo capture features within the app</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Location: </b>To provide location-based services and relevant local information</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>File Management: </b>To help you organize and manage files within the app</p>
+					<p style="margin-top: 15px;">You can manage these permissions at any time through your device settings.</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Data Usage Purposes</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
 					<p style="margin-top: 15px;">We use your data to:</p>
-					<p style="margin-top: 15px;">▪️ Show personalized ads</p>
-					<p style="margin-top: 15px;">▪️ Respond to customer support inquiries</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Provide and maintain our Services</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Show personalized and non-personalized advertisements</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Analyze usage patterns to improve user experience</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Detect and prevent technical issues</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Respond to customer support inquiries</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Fulfill legal obligations</p>
 				</div>
 				<div class="three-title">
 					<p>Legal Basis for Data Usage</p>
 				</div>
 				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
-					<p>We rely on:</p>
-					<p style="margin-top: 15px;">▪️ Contractual obligations</p>
-					<p style="margin-top: 15px;">▪️ Your explicit consent</p>
-					<p style="margin-top: 15px;">▪️ Legitimate interests for business operations</p>
+					<p>We rely on the following legal grounds to process your personal data:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Contractual obligations: </b>Processing necessary for performance of our contract with you</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Your explicit consent: </b>For specific data processing activities, particularly regarding personalized advertising</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Legitimate interests: </b>For business operations, security, and improving our services</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Legal compliance: </b>To comply with applicable laws and regulations</p>
 				</div>
 				<div class="three-title">
 					<p>Third-Party Sharing</p>
 				</div>
 				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
-					<p>We may share data with:</p>
-					<p style="margin-top: 15px;">▪️ Ad Platforms: Like Google AdMob</p>
-					<p style="margin-top: 15px;">▪️ Analytics Tools: Such as Firebase and Google Analytics</p>
-					<p style="margin-top: 15px;">Your privacy is important to us. We will only share your personal information when absolutely necessary, such as for legal reasons or mandatory administrative actions.</p>
+					<p>We may share data with the following categories of third parties:</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Advertising Partners</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Google AdMob: </b>Receives device identifiers, IP address, and usage data to serve relevant ads</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Facebook Meta Ads: </b>Receives device identifiers and usage data for ad targeting</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Mintegral: </b>Receives device identifiers and usage data for ad serving</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Pangle: </b>Receives device identifiers and usage data for ad delivery</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Applovin: </b>Receives device identifiers and usage data for ad optimization</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Analytics Providers</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Firebase: </b>Receives usage and crash data to improve app performance</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Google Analytics: </b>Receives anonymized usage data for statistical analysis</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Other Third Parties</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Service Providers: </b>Who perform services on our behalf (hosting, payment processing)</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Legal Authorities: </b>When required by law, court order, or governmental regulation</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Business Partners: </b>In connection with a merger, sale, or acquisition</p>
+					<p style="margin-top: 15px;">We ensure all third-party partners comply with applicable data protection laws. Your privacy is important to us, and we will only share your personal information when absolutely necessary.</p>
 				</div>
 				<div class="three-title">
 					<p>Data Retention</p>
 				</div>
 				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
-					<p>We will retain your data for as long as necessary to fulfill the purposes for which it was collected.</p>
+					<p>We retain your personal data for specific timeframes based on the type of data:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Account information: </b>For as long as your account is active plus 30 days after deletion</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Usage data: </b>For 26 months from collection</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Customer support communications: </b>For 2 years after resolution of your inquiry</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Device information: </b>For 13 months from your last app usage</p>
+					<p style="margin-top: 15px;">After these periods expire, your data will be securely deleted or anonymized.</p>
 				</div>
 				<div class="two-title">
 					<p>Your Rights</p>
@@ -300,57 +439,123 @@
 					<p>In accordance with the laws of your region, you may have certain rights related to your personal information. These rights might include (if applicable):</p>
 				</div>
 				<div class="content-default">
-				    1. <span class="content-16">Access:</span>
-				    You have the right to request information about the personal data we collect about you.
+				    <span class="content-blue">1. </span><span class="content-16">Access:</span>
+				    You have the right to request information about what personal data we collect about you and how it's used.
 				</div>
 				<div class="content-default" style="margin-top: 15px">
-				    2. <span class="content-16">Permissions Management:</span>
-					You can revoke any permissions you've previously granted us, such as access to your camera or camera roll.
+				    <span class="content-blue">2. </span><span class="content-16">Correction:</span>
+					You can request correction of inaccurate personal data.
 				</div>
 				<div class="content-default" style="margin-top: 15px">
-				    3. <span class="content-16">Deletion:</span>
-				    You have the right to request that we delete your personal information.
+				    <span class="content-blue">3. </span><span class="content-16">Deletion: </span>
+				    You have the right to request that we delete your personal information (subject to certain exceptions).
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
-				    4. <span class="content-16">Opt-Out of Personalized Ads:</span>
-				    You have the right to opt-out of receiving personalized advertisements.
+				    <span class="content-blue">4. </span><span class="content-16">Permissions Management:</span>
+				    You can revoke any permissions you've previously granted us through your device settings.
 				</div>
-				<div class="three-title">
+				<div class="content-default" style="margin-top: 15px">
+				    <span class="content-blue">5. </span><span class="content-16">Data Portability:</span>
+					Where applicable, you can request a copy of your data in a structured, machine-readable format.
+				</div>
+				<div class="content-default" style="margin-top: 15px">
+				    <span class="content-blue">6. </span><span class="content-16">Restriction of Processing: </span>
+					You can request limitation of how we use your data in certain circumstances.
+				</div>
+				<div class="content-default" style="margin-top: 15px">
+				    <span class="content-blue">7. </span><span class="content-16">Objection to Processing:</span>
+					You can object to processing based on legitimate interests.
+				</div>
+				<div class="content-default" style="margin-top: 15px">
+				    <span class="content-blue">8. </span><span class="content-16">Withdraw Consent: </span>
+					Where processing is based on consent, you can withdraw it at any time.
+				</div>
+				<div class="content-default" style="margin-top: 15px">
+				    <span class="content-blue">9. </span><span class="content-16">Ad Preferences: </span>
+					You have the right to opt-out of receiving personalized advertisements.
+				</div>
+				<div style="margin-top: 15px;"></div>
+				<div style="margin-top: 15px;"></div>
+				<div class="two-title">
 					<p>Exercising Your Rights</p>
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
-					<span class="content-16">▪️ Email: </span>
-					You can send an email to uersupport@smallstep.fun to request access, deletion, or to opt-out of personalized ads.
+					<p style="margin-top: 15px;">To exercise any of these rights:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Email: </b>Send a request to usersupport@smallstep.fun</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>In-App: </b>Use the feedback option within our app</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Response Time: </b>We will respond to all legitimate requests within 30 days</p>
 				</div>
 				<div class="two-title">
 					<p>Child Users</p>
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
-					<p>Our app is not directed at children under the age of 16, and we do not knowingly collect data from them.</p>
+					<p>Our app is not directed at children under the age of 16, and we do not knowingly collect data from them. If we discover we have collected personal information from a child under 16, we will promptly delete this information. If you believe we might have any data from or about a child under 16, please contact us at usersupport@smallstep.fun.</p>
 				</div>
 				<div class="two-title">
 					<p>International Data Transfers</p>
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
-					<p>We may transfer your data to servers outside the EEA but will take all necessary measures to ensure your data's security.</p>
+					<p>We operate globally and may transfer your data to servers and third parties located outside your country of residence, including outside the European Economic Area (EEA). When we transfer personal data outside the EEA, we implement appropriate safeguards including:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Standard Contractual Clauses approved by the European Commission</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Adequacy decisions where applicable</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Data Protection Agreements with our partners</p>
 				</div>
 				<div class="two-title">
 					<p>Security Measures</p>
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
-					<p>We employ industry-standard security measures like encryption and firewalls to protect your data.</p>
+					<p>We employ industry-standard security measures to protect your data, including:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Encryption of data in transit and at rest</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Firewalls and secure server infrastructure</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Regular security assessments and penetration testing</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Access controls and authentication requirements</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Employee training on data protection</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Secure data disposal procedures</p>
+					<p style="margin-top: 15px;">While we implement these safeguards, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>Cookie Policy</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p style="margin-top: 15px;">Our app and website may use cookies and similar tracking technologies to enhance your experience. These technologies may collect information such as your IP address, browser type, and usage patterns. You can control cookie settings through your browser or device settings.</p>
+					<p style="margin-top: 15px;">We use the following types of cookies:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Essential cookies: </b>Required for basic functionality</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Preference cookies: </b>Remember your settings and preferences</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Analytics cookies: </b>Help us understand how our services are used</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Advertising cookies: </b>Used to serve relevant advertisements</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>In-App Purchases</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p style="margin-top: 15px;">If you make in-app purchases, payment information is processed by third-party payment processors and is not stored by us. We receive only confirmation of successful transactions without storing payment details.</p>
+				</div>
+				<div class="three-title" style="margin-top: 15px;">
+					<p>User-Generated Content</p>
+				</div>
+				<div class="content-default" style="margin-top: 5px;margin-bottom: 30px;">
+					<p style="margin-top: 15px;">If our app allows you to create, upload, or share content:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">You retain ownership of your content</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">We may use this content only as needed to provide our services</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">You are responsible for ensuring your content does not violate others' rights</p>
 				</div>
 				<div class="two-title">
 					<p>Policy Updates</p>
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
-					<p>We may update this policy periodically. We will notify you of any changes through our app.</p>
+					<p>We may update this policy periodically to reflect changes in our practices or legal requirements. We will notify you of any significant changes through:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">In-app notifications</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Email communications (if you've provided your email)</p>
+					<p class="blue-dot-text" style="margin-top: 15px;">Notice on our website</p>
+					<p style="margin-top: 15px;">The updated policy will be effective upon posting, unless otherwise stated.</p>
 				</div>
 				<div class="two-title">
 					<p>Contact and Complaints</p>
 				</div>
 				<div class="content-default" style="margin-top: 15px;margin-bottom: 30px;">
-					<p>If you have any questions or complaints, please contact us at usersupport@smallstep.fun</p>
+					<p>If you have any questions, concerns, or complaints about our privacy practices:</p>
+					<p class="blue-dot-text" style="margin-top: 15px;"><b>Email: </b>usersupport@smallstep.fun</p>
+					<p style="margin-top: 15px;">You also have the right to lodge a complaint with your local data protection authority.</p>
 				</div>
 				<div class="two-title">
 					<p>Confirmation and Compliance</p>
