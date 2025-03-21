@@ -5,7 +5,7 @@ google.com, pub-5234674988768908, DIRECT, f08c47fec0942fa0
 #Facebook
 facebook.com, 2145506259200398, RESELLER, c3e20eee3f780d68
 facebook.com, 481489054998948, RESELLER, c3e20eee3f780d68
-facebook.com, 938444704846373, DIRECT, c3e20eee3f780d68
+facebook.com, 938444704846373, RESELLER, c3e20eee3f780d68
 #Facebook
 #Minternal
 mintegral.com, 50844, DIRECT, 0aeed750c80d6423
