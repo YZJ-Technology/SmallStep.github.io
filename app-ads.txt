@@ -8,6 +8,10 @@ facebook.com, 481489054998948, RESELLER, c3e20eee3f780d68
 facebook.com, 938444704846373, RESELLER, c3e20eee3f780d68
 facebook.com, 938444704846373, DIRECT, c3e20eee3f780d68
 #Facebook
+#OpenX#
+openx.com, 562316224, DIRECT, 6a698e2ec38604c6
+openx.com, 562316224, RESELLER, 6a698e2ec38604c6
+#OpenX#
 #Minternal
 mintegral.com, 50844, DIRECT, 0aeed750c80d6423
 pokkt.com, 7139, RESELLER, c45702d9311e25fd
